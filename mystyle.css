@@ -1,0 +1,209 @@
+* {	padding: 0;
+	margin: 0;
+}
+
+#copyright
+{font-size: small; color: aqua;}
+
+
+body {
+		background-color: #e0e0e0;
+		font: small/1.3 Arial, Arial, Arial; }
+
+.superstudents {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+}
+	.container {
+		width: 100%;
+		height: 1000px;
+		margin-right: auto;
+		margin-left: auto; }
+
+	nav {
+		width: 100%;
+		height: 76px;
+		background-color: #6060aa ;
+		text-align: center;
+		 }
+	nav ul {list-style-type: none;}
+
+	nav li {
+		display: inline-block;
+		width: 17%;
+		text-align: center;}
+	nav li a {
+		display: block;
+		line-height: 50px;
+		text-decoration: none;
+		color: white;
+		 }
+	nav li a:hover {
+		color: #6060aa;
+		background-color: #fff; }
+
+	ul.topnav{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #cc1417;
+		width: 100%
+	}
+
+	ul.topnav li {float: left;}
+
+	ul.topnav li a {
+		display: inline-block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition:  0.3s;
+		font-size:  17px;
+	}
+
+
+	ul.topnav li a:hover{
+		background-color: #fff;
+		color: #6060aa; /*visiblity:hidden;*/
+	}
+	ul.topnav li.icon {display: none;}
+
+
+	h1 {
+		font-size: 3.5em;
+		padding: 1em 1em;
+		color: #6060aa;
+		margin: 0; }
+
+		h3
+		{
+			font-size: 1.5em;
+			padding: 1em 1em;
+			color: #6060aa;
+			margin: 0; }
+
+	.content {
+		padding: 50px; }
+
+	p {padding: 50px;
+	line-height: 2em;
+font-size: 1.5em;}
+
+	* {box-sizing:border-box}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 500px;
+	  position:relative;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@media screen and (min-width:320px) and (max-width:680px)
+	{
+		ul.topnav li:not(:first-child){display: none;
+		}
+		ul.topnav li.icon { float: right; display: inline-block;}
+		ul.topnav li.icon { position: absolute; right: 0; top: 0;}
+		ul.topnav.responsive li { float:none; display: inline;}
+		ul.topnav.responsive li a { display: block; text-align: left;}
+	}
+
+	@media screen and (max-width: 320px){
+		ul.topnav li:not(:first-child){display: none;}
+		ul.topnav li.icon { float: right; display: inline-block;}
+		ul.topnav.responsive {position: relative;}
+		ul.topnav.responsive li.icon { position: fixed; right: 0; top: 0;}
+		ul.topnav.responsive li { float: none; display: inline;}
+		ul.topnav.responsive li a { display: block; text-align: left;}
+	}
