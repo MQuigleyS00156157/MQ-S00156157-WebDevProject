@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Irish-Android_Content</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<div class="container">
+  <header>
+	<h1>Content Gallery</h1>
+
+  <nav>
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="irishandroid_aboutme.html">About Me</a></li>
+    <li><a href="irishandroid_content2.html">Gallery</a></li>
+
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">
+    &#9776;</a>
+    </li>
+    </ul>
+    </nav>
+
+</header>
+    <h3>Screenshots</h3>
+<p> this is a small collection of my content for the channel. a small gallery of screenshots from videos and 2 of the shorts i have mage
+  for the channel. Please enjoy
+</p>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+
+        <div class="numbertext">1 / 5</div>
+        <img src="images/death1.png" alt="Death1" title="Death1" >
+        <div class="text">death1</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/death2.png"  alt="Death2" title="Death2" >
+        <div class="text">death2</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/hat1.png" alt="Hat1" title="Hat1"  >
+        <div class="text">hat1</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/hat2.png" alt="Hat2 " title="Hat2" >
+        <div class="text"> hat2</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/rush1.png" alt="Rush1" title=" Rush1" >
+        <div class="text"> rush1</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/rush2.png" alt="Rush2" title="Rush2" >
+        <div class="text"> rush2</div>
+        </div>
+
+
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    <br>
+
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+</section>
+<section>
+<video controls  style="float: left; width: 50%; height: 500px ;" src="images/vid1.mp4" alt="vid1" title="vid1"></video>
+<video controls style="float:right; width: 50%; height: 500px;" src="images/vid2.mp4" alt="vid2" title="vid2"></video>
+
+
+
+
+
+</section>
+<footer>
+  <h3>Channel Link<a href="https://www.youtube.com/channel/UC-4h3d2X638eQ-9zRo_aq2A"> Subscribe To The Channel</a></h3>
+  <h3>Social Media:  <a href="https://www.facebook.com/IrishAndroid95/">IrishAndroid Offical facebook</a> </h3>
+</footer>
+</div>
+<script>
+function myFunction(){
+document.getElementsByClassName("topnav")[0].classList.toggle("responsive");}
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
