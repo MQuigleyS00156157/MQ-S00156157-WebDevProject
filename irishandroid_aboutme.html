@@ -5,6 +5,39 @@
 <head>
     <title>Irish-Android AboutMe</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+
+    <style>
+      table { 
+                  border-collapse: collapse;
+                  width: 100%;
+              }
+      
+              th, td {
+                  text-align: left;
+                  padding: 8px;
+                  border-bottom: 1px solid black;
+                  position: relative;
+                  color: black;
+                  font-family: Arial;
+                  margin: 0;
+                  padding: 0 20px;
+                  line-height: 1.5;
+              }
+      
+                  td:first-child:hover::after { 
+                      content: attr(data-tooltip); 
+                      position: absolute; 
+                      top: -100%; 
+                      background-color: #160b59;
+                      color: black; 
+                      padding: 8px;
+                      border-radius: 25px;
+                      white-space: nowrap; 
+                  }
+      </style>
+
+
 </head>
 
 <body>
@@ -17,6 +50,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="irishandroid_aboutme.html">About Me</a></li>
     <li><a href="irishandroid_content2.html">Content Gallery</a></li>
+    <li><a href="irishandroid_contact.html">Contact</a></li>
     
     <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">
@@ -28,6 +62,7 @@
 </header>
 
 	<section class="content">
+   <article>
     <h2>Who Am I</h2>
     <p>
       i am just your  adverage gaming youtuber trying to make content to make people happy.
@@ -35,19 +70,72 @@
       and Jacksepticeye.
       i wont say this journey is without its issues as i had to battle with copyright and your adverage internet bully but i am having fun.
     </p>
-
-    
+  </article>
+  <article>
+    <h2>Why I Am Doing Youtube</h2>
+    <p>
+    The main reason why i am doing youtube is that i have a love for video games and nerdy content in
+    general and i wish to share that intrest with the world. I dont realy care for the fame and the money that 
+    youtube might bring me as long as i can make some new friends and have a luagh i will be happy.
+    </p>
+  </article>
 
 </section>
+<h3>Chatnnel Statistics</h3>
+<p>this is just a small table of how well some of my recent content has done</p>
+<table>
+  <thead>
+    <tr>
+      <th><a href="https://www.youtube.com/shorts/edoa16LHqlU">You Died</a></th>
+      <th>Current Views: 2572</th>
+      <th>Current Like Ratio: 89.2%. 91:11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=LJfenhsmmJY   ">Where The Wilfflowers Are</a></td>
+      <td>Current Views:12,651 </td>
+      <td>Current Like Ratio: 94.6%, 122:7</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=6a8BKWH1ReQ">Sonic Adventure 2 Episode</a></td>
+      <td>Current Views: 6831</td>
+      <td>Current Like Ratio: 98.6%, 59:1</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+
 <footer>
-  <h3>Channel Link<a href="https://www.youtube.com/channel/UC-4h3d2X638eQ-9zRo_aq2A"> Subscribe To The Channel</a></h3>
-  <h3>Social Media:  <a href="https://www.facebook.com/IrishAndroid95/">IrishAndroid Offical facebook</a> </h3>
+
+  <nav>
+    <ul class="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="irishandroid_aboutme.html">About Me</a></li>
+      <li><a href="irishandroid_content2.html">Gallery</a></li>
+      <li><a href="irishandroid_contact.html">Contact</a></li>
+  
+      <li class="icon">
+      <a href="javascript:void(0);" onclick="myFunction()">
+      &#9776;</a>
+      </li>
+      </ul>
+      
+    <h3>Channel Link<a href="https://www.youtube.com/channel/UC-4h3d2X638eQ-9zRo_aq2A"> Subscribe To The Channel</a></h3>
+    <h3>Social Media:  <a href="https://www.facebook.com/IrishAndroid95/">IrishAndroid Offical facebook</a> </h3>
+  
+   <p id="copyright"> &copy;copyright Irish-Android.1995</p>
+  
+      </nav>
 </footer>
 </div>
 <script>
 function myFunction(){
 document.getElementsByClassName("topnav")[0].classList.toggle("responsive");}
-}
+
 </script>
 </body>
 </html>
